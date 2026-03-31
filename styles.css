@@ -291,8 +291,10 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2.5rem;
+    max-width: 1040px;
+    margin: 0 auto;
 }
 
 .service-card {
@@ -314,8 +316,9 @@ body {
 
 .service-img {
     width: 100%;
-    height: 200px;
+    height: 260px;
     object-fit: cover;
+    object-position: center;
     transition: var(--transition);
 }
 
@@ -650,6 +653,10 @@ body {
 
     .contact-form {
         padding: 1.8rem;
+    }
+
+    .service-img {
+        height: 230px;
     }
 
     .hero-nav {
