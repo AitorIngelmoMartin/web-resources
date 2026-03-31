@@ -106,3 +106,57 @@ window.addEventListener('load', function() {
     // Esta función se ejecuta cuando la página se carga completamente
     console.log('Todo para DEPURACIÓN - Sitio web cargado exitosamente');
 });
+
+// Carrusel de imágenes en Hero
+const heroSlider = document.querySelector('.hero-slider');
+if (heroSlider) {
+    const slides = heroSlider.querySelectorAll('.hero-img');
+    const prevButton = heroSlider.querySelector('.hero-nav-prev');
+    const nextButton = heroSlider.querySelector('.hero-nav-next');
+    const autoSlideDelay = 5000;
+    let currentSlide = 0;
+    let autoSlideTimer;
+
+    function showSlide(index) {
+        slides.forEach((slide, slideIndex) => {
+            slide.classList.toggle('active', slideIndex === index);
+        });
+        currentSlide = index;
+    }
+
+    function goToNextSlide() {
+        const nextIndex = (currentSlide + 1) % slides.length;
+        showSlide(nextIndex);
+    }
+
+    function goToPrevSlide() {
+        const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+    }
+
+    function startAutoSlide() {
+        clearInterval(autoSlideTimer);
+        autoSlideTimer = setInterval(goToNextSlide, autoSlideDelay);
+    }
+
+    prevButton.addEventListener('click', function() {
+        goToPrevSlide();
+        startAutoSlide();
+    });
+
+    nextButton.addEventListener('click', function() {
+        goToNextSlide();
+        startAutoSlide();
+    });
+
+    heroSlider.addEventListener('mouseenter', function() {
+        clearInterval(autoSlideTimer);
+    });
+
+    heroSlider.addEventListener('mouseleave', function() {
+        startAutoSlide();
+    });
+
+    showSlide(0);
+    startAutoSlide();
+}
