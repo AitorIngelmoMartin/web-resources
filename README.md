@@ -1,7 +1,7 @@
-# AquaNova - Sitio Web Profesional de Depuración de Piscinas
+# Todo para DEPURACIÓN - Sitio Web Profesional de Depuración de Piscinas
 
 ## 📋 Descripción
-Sitio web moderno y responsive para AquaNova, empresa especializada en depuración, mantenimiento y tratamiento de piscinas en España. Diseñado con capacidad de contacto por WhatsApp 24/7.
+Sitio web moderno y responsive para Todo para DEPURACIÓN, empresa especializada en depuración, mantenimiento y tratamiento de piscinas en España.
 
 ## 📁 Estructura de Archivos
 ```
@@ -106,7 +106,7 @@ npx http-server
 6. Climatización
 
 ### ABOUT
-- Descripción profesional de AquaNova
+- Descripción profesional de Todo para DEPURACIÓN
 - 4 características clave
 - Estadísticas impactantes:
   - 500+ piscinas mantenidas
@@ -167,7 +167,7 @@ Para integración de emails adicionales o funcionalidades avanzadas, considera:
 
 ## 📄 Licencia
 
-Este proyecto es de uso libre para AquaNova.
+Este proyecto es de uso libre para Todo para DEPURACIÓN.
 
 ---
 

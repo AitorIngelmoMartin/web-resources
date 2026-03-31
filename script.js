@@ -3,7 +3,7 @@ const WHATSAPP_NUMBER = '34600123456'; // Sin + ni espacios
 
 // Función para abrir WhatsApp
 function openWhatsApp() {
-    const message = encodeURIComponent('Hola AquaNova, me gustaría conocer más sobre vuestros servicios de depuración de piscinas.');
+    const message = encodeURIComponent('Hola Todo para DEPURACIÓN, me gustaría conocer más sobre vuestros servicios de depuración de piscinas.');
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
     window.open(whatsappUrl, '_blank');
 }
@@ -36,7 +36,7 @@ if (contactForm) {
         const consulta = this.querySelector('textarea').value;
         
         // Crear mensaje para WhatsApp
-        const mensaje = `Hola AquaNova,%0A%0AMi nombre es ${nombre}%0ATeléfono: ${telefono}%0AEmail: ${email}%0A%0AConsulta: ${consulta}`;
+        const mensaje = `Hola Todo para DEPURACIÓN,%0A%0AMi nombre es ${nombre}%0ATeléfono: ${telefono}%0AEmail: ${email}%0A%0AConsulta: ${consulta}`;
         
         // Enviar por WhatsApp
         const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensaje}`;
@@ -104,5 +104,5 @@ document.head.appendChild(style);
 // Detección automática del número de WhatsApp desde el HTML
 window.addEventListener('load', function() {
     // Esta función se ejecuta cuando la página se carga completamente
-    console.log('AquaNova - Sitio web cargado exitosamente');
+    console.log('Todo para DEPURACIÓN - Sitio web cargado exitosamente');
 });
